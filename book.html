@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="book">
+    <div class="card-content">
+        <h2>Table Reservation</h2>
+        <form>
+            <div class="form-row">
+                <input type="date" id="date" name="date" required>
+
+                <select name="hour">
+                    <option value="hour">Select time</option>
+                    <option value="10:00-12:00">10:00-12:00</option>
+                    <option value="12:00-14:00">12:00-14:00</option>
+                    <option value="14:00-16:00">14:00-16:00</option>
+                    <option value="16:00-18:00">16:00-18:00</option>
+                    <option value="18:00-20:00">18:00-20:00</option>
+                    <option value="20:00-22:00">20:00-22:00</option>
+                    <option value="22:00-00:00">22:00-00:00</option>
+                </select>
+                </div>
+                <div class="form-row"><br>
+                    <input type="text" placeholder="Write your name" required>
+                    <input type="text" placeholder="phone number" required>
+                </div>
+                <div class="form-row"><br>
+                    <input type="number" placeholder="how many persons?" required>
+                    <button type="submit" value="BOOK TABLE" formaction="table.html">Book Table</button>
+                </div>
+        </form>
+    </div>
+    </section>
+    <style>
+    .card-content{ 
+        min-height:100vh;
+        background-image:url("booking.jpg");
+        background-position:center;
+        background-size:cover;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        padding-bottom: 20px;
+        height:330px;
+    
+    }
+    .form-row{
+        display:flex;
+        width:90%;
+        margin:0 auto;
+    }
+    .form-row button{
+        width:200px;
+        height:50px;
+        font-size: 18px;
+        border-radius: 15px;
+        border-color:red;
+        color:dark red;
+        background-color: lawngreen;
+        font-weight: bold;
+        padding:3px;
+
+    }
+    form select,form input{
+        display:block;
+        width:100%;
+        margin:15px 12px;
+        padding:5px;
+        font-size:15px;
+    }
+    </style>
+</body>
+</html>
